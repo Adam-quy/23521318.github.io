@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #introduce h1{
+            background-color: #F3FDE8;
+        }
+        #interact h1{
+            background-image: url("https://img.thuthuatphanmem.vn/uploads/2018/11/06/hinh-anh-mua-thu-la-do_043603618.jpg");
+            background-repeat: repeat-x;
+        }
+
+        h1,h2,h3,h4{
+            font-size: 24px;
+            -webkit-text-stroke: 1px #000;
+        }
+        td,th{
+            border: 1px solid #000;
+        }
+        
+        nav, footer {
+            background-color: #d4f2f4;
+            color: #0b0848;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #0b0848;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#introduce">Giới thiệu bản thân</a>
+        <a href="#interact">Gửi thông tin và giao lưu cùng tôi</a>
+    </nav>
+    
+    <div id="introduce">
+        <h1 style="color: #CAEDFF ;">Giới thiệu bản thân</h1>
+        <img style = "display: block; margin-left: auto; margin-right: auto;" src="https://th.bing.com/th/id/R.fa45f4ecf5a3d1233affe60021459af5?rik=NNNc9ubAf1wOgQ&pid=ImgRaw&r=0" alt="ảnh đại diện" width="200px" height="150px">
+        <h2 style="color: #D8B4F8  ;">Thông tin cơ bản</h2>
+        <ul>
+            <li>Tên: Nguyễn Lê Phú Quý</li>
+            <li>Năm sinh: 2005</li>
+            <li>Chuyên ngành: Hệ thống thông tin</li>
+        </ul>
+        <h2 style="color: #D8B4F8;">Sở thích</h2>
+        <h3 style="color: #FFC7EA;">Món ăn</h3>
+        <ol>
+            <li>Chuối, táo</li>
+            <li>Thịt kho tàu</li>
+            <li>Phở</li>
+        </ol>
+        <h3 style="color: #FFC7EA;">Giải trí</h3>
+        <h4>Trò chơi</h4>
+        <ul>
+            <li>Bắn bi</li>
+            <li>Bắn súng</li>
+            <li>Đối kháng</li>
+        </ul>
+        <h4>Bài nhạc yêu thích</h4>
+        <ul>
+            <li>Nơi này có anh</li>
+            <li>Lạc trôi</li>
+            <li>Stereo hearts</li>
+        </ul>
+        <h2 style="color: #D8B4F8 ;">Mục tiêu bản thân</h2>
+        <table cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Mục tiêu</th>
+                <th>Thời hạn</th>
+                <th>Hoàn thành</th>
+            </tr>
+            <tr>
+                <td>Có việc làm ổn định</td>
+                <td>2025</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Học thêm kỹ năng lập trình</td>
+                <td>2024-2025</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Du lịch ít nhất 2 nơi mới</td>
+                <td>2025</td>
+                <td><input type="checkbox"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="interact">
+        <h1 style="color: #CAEDFF ;">Gửi thông tin và giao lưu cùng tôi</h1>
+        <form>
+            <div style="margin-bottom: 15px;">
+                <label for="fullname">Họ và tên:</label>
+                <input type="text" id="fullname" name="fullname" size="40">
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" size="40">
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label for="message">Tin nhắn:</label><br>
+                <textarea id="message" name="message" rows="4" cols="40"></textarea>
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label>Giới tính:</label><br>
+                <input type="radio" id="male" name="gender" value="nam">
+                <label for="male">Nam</label>
+                <input type="radio" id="female" name="gender" value="nữ">
+                <label for="female">Nữ</label>
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label>Sở thích:</label><br>
+                <input type="checkbox" id="music" name="hobbies" value="nghe nhạc">
+                <label for="music">Nghe nhạc</label>
+                <input type="checkbox" id="swimming" name="hobbies" value="bơi lội">
+                <label for="swimming">Bơi lội</label>
+                <input type="checkbox" id="beach" name="hobbies" value="biển">
+                <label for="beach">Biển</label>
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label for="major">Ngành:</label>
+                <select id="major" name="major">
+                    <option value="khoa học máy tính">Khoa học Máy tính</option>
+                    <option value="hệ thống thông tin">Hệ thống thông tin</option>
+                    <option value="công nghệ thông tin">Công nghệ thông tin</option>
+                    <option value="phần mềm">Phần mềm</option>
+                </select>
+            </div>
+            
+            <div>
+                <button type="submit">Gửi</button>
+            </div>
+        </form>
+    </div>
+    
+    <footer>
+        <p>@2024 23521318 Nguyễn Lê Phú Quý</p>
+    </footer>
+</body>
+</html>
